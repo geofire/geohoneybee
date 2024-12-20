@@ -1,6 +1,6 @@
 import unittest
 
-import surveykit.lint as lint
+import honeybee.lint as lint
 
 
 class TestLint(unittest.TestCase):
