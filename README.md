@@ -55,6 +55,32 @@ Required packages:
 
 ![Syntax highlighting in Vim](./example/honeycomb_in_vim_small.png)
 
+## Usage
+### beepile
+`beepile` is the tool to compile XLSForm surveys from the Honeycomb language.
+
+To use `beepile`, ensure Honeybee is first installed in the Python environment (or virtual environment, ensuring this venv is 
+also active) you will be using. See **Installation** above for more information.
+
+Then simply run the following command:
+```shell
+beepile \path\to\survey.hcs -o \path\to\survey.xlsx
+```
+Honeybee also supports keyword arguments:
+```shell
+beepile \path\to\survey.hcs --output-filename \path\to\survey.xlsx
+```
+`beepile` will ingest `survey.hcs` then transform the specified survey into an XLSForm, creating `survey.xlsx` in the 
+desired folder once the transformation is complete.
+
+### beelint
+`beelint` checks the correctness of XLSX documents. To use `beelint`, run the following command:
+
+```shell
+beelint \path\to\survey.xlsx
+```
+
+
 ## The Honeycomb language
 
 Honeybee allows us to work with questionnaires in a language called Honeycomb.
