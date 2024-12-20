@@ -3,3 +3,6 @@ argh~=0.31.3
 openpyxl~=3.1.5
 pyparsing~=3.2.0
 honeybee~=0.2010041859
+
+# Testing
+pytest
